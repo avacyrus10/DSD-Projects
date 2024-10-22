@@ -1,0 +1,46 @@
+|Stack
+clk => dout[3]~reg0.CLK
+clk => dout[2]~reg0.CLK
+clk => dout[1]~reg0.CLK
+clk => dout[0]~reg0.CLK
+clk => index[3].CLK
+clk => index[2].CLK
+clk => index[1].CLK
+clk => index[0].CLK
+rstn => index~3.OUTPUTSELECT
+rstn => index~2.OUTPUTSELECT
+rstn => index~1.OUTPUTSELECT
+rstn => index~0.OUTPUTSELECT
+rstn => dout~3.OUTPUTSELECT
+rstn => dout~2.OUTPUTSELECT
+rstn => dout~1.OUTPUTSELECT
+rstn => dout~0.OUTPUTSELECT
+pop => next_index~3.OUTPUTSELECT
+pop => next_index~2.OUTPUTSELECT
+pop => next_index~1.OUTPUTSELECT
+pop => next_index~0.OUTPUTSELECT
+pop => next_dout~3.OUTPUTSELECT
+pop => next_dout~2.OUTPUTSELECT
+pop => next_dout~1.OUTPUTSELECT
+pop => next_dout~0.OUTPUTSELECT
+push => next_index[0].OUTPUTSELECT
+push => next_index[1].OUTPUTSELECT
+push => next_index[2].OUTPUTSELECT
+push => next_index[3].OUTPUTSELECT
+push => stack.WE
+push => next_dout[0].LATCH_ENABLE
+push => next_dout[3].LATCH_ENABLE
+push => next_dout[2].LATCH_ENABLE
+push => next_dout[1].LATCH_ENABLE
+empty <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+full <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+din[0] => stack.DATAIN
+din[1] => stack.DATAIN1
+din[2] => stack.DATAIN2
+din[3] => stack.DATAIN3
+dout[0] <= dout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
