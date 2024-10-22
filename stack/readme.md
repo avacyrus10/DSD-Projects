@@ -49,29 +49,6 @@ Here’s an example of basic stack operations:
    ![FPGA Pop](images/4.png)
 
 
-## How to Run
-
-1. **Compile the Verilog code** using a simulator like ModelSim or Xilinx Vivado.
-2. **Load the testbench** to verify the stack's functionality, including push and pop operations.
-3. **View the outputs** for the stack operations to ensure proper functionality.
-
-## Files Needed from Directory
-
-From your directory listing, the following files are likely needed for the project:
-
-1. **`stack.v`**: The Verilog code for the stack.
-2. **`stack_description.txt`**: Provides a textual description of the stack’s design.
-3. **`stack.qsf` and `stack.qpf`**: Project files needed if you're using a Quartus environment.
-4. **`stack.sof` or `stack.pof`**: Programming files needed for FPGA implementation.
-5. **Report files**: Useful for understanding synthesis results:
-   - **`stack.fit.rpt`**: Fitting report.
-   - **`stack.map.rpt`**: Mapping report.
-   - **`stack.flow.rpt`**: Flow summary report.
-   - **`stack.asm.rpt`**: Assembly report.
-   - **`stack.tan.rpt`**: Timing analysis report.
-
-The other files, like incremental databases (`incremental_db`), can be skipped unless you're debugging or re-synthesizing the project.
-
 ## Author
 
 Ava Cyrus
